@@ -47,7 +47,7 @@ class ProductQuantityWizard(models.TransientModel):
                 'line_ids': [(0, 0, inv_line)],
             })
         
-            inventory.action_done()
+            inventory.action_validate()
         
         return {'type': 'ir.actions.act_window_close'}
 
