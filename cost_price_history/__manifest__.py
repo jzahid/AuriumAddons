@@ -2,12 +2,12 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Product Price History',
+    'name': 'Product Cost Price History',
     'version': '12.0',
     'category': 'Purchases',
     'author':'Aurium Technologies',
     'description': """
-      Add a products price history list and graph view
+      Add a products cost price history list and graph view
     """,
     'website': 'http://auriumtechnologies.com',
     'depends': ['purchase'],
