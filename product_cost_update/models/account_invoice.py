@@ -33,7 +33,7 @@ class AccountMove(models.Model):
                 for line in invoice.invoice_line_ids:
                     if line.product_id and line.price_unit:
                         pr_id = product_obj.browse(line.product_id.id)
-                        pr_id.write({'standard_price': line.price_unit}
+                        pr_id.write({'standard_price': line.price_unit})
         return res
 
 
