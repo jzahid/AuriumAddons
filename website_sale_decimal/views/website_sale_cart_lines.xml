@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="decimal_cart_lines" inherit_id="website_sale.cart_lines" customize_show="True" name="Decimal Quantity" priority="32">
+            <xpath expr="//input[contains(@class,'js_quantity form-control quantity')]" position="replace">
+                <input type="text" class="js_quantity form-control quantity" 
+                    t-att-data-line-id="line.id" 
+                    t-att-data-product-id="line.product_id.id" 
+                    t-att-value="line.product_uom_qty"/>
+            </xpath>
+
+        </template>
+    </data>
+</odoo>
